@@ -1,0 +1,48 @@
+# Secrets and local env
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# App data (per-user DB and caches)
+data/users/
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+database/*.db
+database/*.db-*
+database/*.copy.lock
+database/.sqlite-copy-*/
+database/backups/
+data/ai_cache/
+data/qa_output/
+data/qa_*.log
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
